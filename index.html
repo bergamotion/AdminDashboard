@@ -6,31 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/c1c9304549.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <title>Admin Dashboard</title>
 </head>
 <body>
     <div class="page">
         <aside class="navigation">
             <div class="navigation__logo-container">
-                <h1>Dashboard</h1>
+                <img src="images/dashboard.png" alt="" class="navigation__logo">
+                <h1 class="navigation__title">Dashboard</h1>
             </div>
 
             <nav class="main-nav">
                 <ul>
-                    <li class="main-nav__item"><a href="#" class="main-nav__link">Home</a></li>
-                    <li class="main-nav__item"><a href="#" class="main-nav__link">Profile</a></li>
-                    <li class="main-nav__item"><a href="#" class="main-nav__link">Messages</a></li>
-                    <li class="main-nav__item"><a href="#" class="main-nav__link">History</a></li>
-                    <li class="main-nav__item"><a href="#" class="main-nav__link">Tasks</a></li>
-                    <li class="main-nav__item"><a href="#" class="main-nav__link">Communities</a></li>
-                    <li class="main-nav__item"><a href="#" class="main-nav__link">Settings</a></li>
-                    <li class="main-nav__item"><a href="#" class="main-nav__link">Support</a></li>
-                    <li class="main-nav__item"><a href="#" class="main-nav__link">Privacy</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link"><i class="fa-regular fa-id-card"></i>Profile</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link"><i class="fa-solid fa-message"></i>Messages</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link"><i class="fa-regular fa-clock"></i>History</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link"><i class="fa-regular fa-paste"></i>Tasks</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link"><i class="fa-solid fa-users"></i>Communities</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link"><i class="fa-solid fa-gear"></i>Settings</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link"><i class="fa-solid fa-question"></i>Support</a></li>
+                    <li class="main-nav__item"><a href="#" class="main-nav__link"><i class="fa-solid fa-shield-halved"></i>Privacy</a></li>
                 </ul>
             </nav>
         </aside>
 
         <header class="header">
+            <div class="header__container">
+                <label for="search-bar" class="header__search-label">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" class="header__search-bar" id="search-bar">
+                </label>
+                <div class="profile">
+                    <div class="profile__notifications"><i class="fa-regular fa-bell"></i></div>
+                    <div class="profile__picture"></div>
+                    <p class="profile__user-name">TiddyHonker</p>
+                </div>
+            </div>
+
+            <div class="header__container header__container_bottom">
+                <div class="big-profile">
+                    <div class="big-profile__picture"></div>
+                    <div class="big-profile__text">
+                        <p class="big-profile__greeting">Hi there,</p>
+                        <p class="big-profile__user-name">TiddyHonker (@honker)</p>
+                    </div>
+                </div>
+                <div class="header__controls">
+                    <button class="header__control-button">New</button>
+                    <button class="header__control-button">Upload</button>
+                    <button class="header__control-button">Share</button>
+                </div>
+            </div>
         </header>
 
         <main class="main"></main>

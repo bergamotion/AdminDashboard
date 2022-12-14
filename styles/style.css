@@ -219,6 +219,18 @@ html {
   scrollbar-color: grey transparent;
   scrollbar-width: thin;
 }
+.card__text::-webkit-scrollbar {
+  width: 10px;
+}
+.card__text::-webkit-scrollbar-track {
+  background-color: transparet;
+  border-radius: 5px;
+}
+.card__text::-webkit-scrollbar-thumb {
+  background-color: grey;
+  background-image: none;
+  border-radius: 5px;
+}
 .card__controls {
   margin-top: 10px;
   margin-right: 20px;

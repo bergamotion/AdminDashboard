@@ -1,0 +1,60 @@
+@use "colors" as *
+
+.notifications
+    background-color: $secondary
+    padding: 20px 20px 40px 5px
+    &__title
+        margin-top: 10px
+    &__card
+        margin-top: 18px
+        background-color: $white
+        border-radius: 10px
+        padding: 30px
+    &__trending-title
+        margin-top: 30px
+
+.announcements
+    &__item
+        margin-top: 15px
+        &::after
+            content: ""
+            display: block
+            height: 1px
+            background-color: $secondary
+            margin-top: 15px
+
+    &__item:first-child
+        margin-top: 0
+    &__item:last-child::after
+        content: ""
+        display: none
+        
+    &__title
+        font-weight: 600
+        font-size: 1rem
+    &__text
+        font-size: 0.8rem
+        color: $light-text
+        margin-top: 5px
+
+.trending
+    padding: 30px 20px
+
+.small-profile
+    cursor: pointer
+    display: flex
+    align-items: center
+    margin-top: 20px
+    &:first-child
+        margin-top: 0
+    &__pfp
+        border-radius: 50%  
+        width: 50px
+        height: 50px
+        margin-right: 20px
+    &__tag
+        font-weight: 600
+    &__status
+        font-size: 0.85rem
+        margin-top: 10px
+        color: $light-text
